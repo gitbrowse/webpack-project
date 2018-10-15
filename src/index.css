@@ -1,0 +1,19 @@
+/*@font-face {*/
+    /*font-family: 'MyFont';*/
+    /*src:  url('./icomoon.svg') format('woff2'),*/
+         /*url('./icomoon.woff') format('woff'),*/
+         /*url('./icomoon.eot') format('woff'),*/
+         /*url('./icomoon.ttf') format('woff');*/
+    /*font-weight: 600;*/
+    /*font-style: normal;*/
+/*}*/
+
+
+.root{
+    /*font-family: MyFont;*/
+    color: blue;
+    /*background: url("./favicon.png") no-repeat;*/
+}
+/*.root:before{*/
+    /*content: '\e911';*/
+/*}*/
