@@ -15,6 +15,12 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.ts/,
+                use: [
+                    'ts-loader',
+                ]
+            },
+            {
                 test: /\.css$/,
                 use: [
                     'style-loader',
@@ -33,15 +39,17 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management'
+            filename: 'index.html',
+            template: 'index.html',
+            inject: true
         }),
         new CleanWebpackPlugin(['dist']),
         new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
     ],
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist',
+        contentBase: './',
         hot: true
     },
     mode: 'development'

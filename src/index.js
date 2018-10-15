@@ -1,14 +1,14 @@
-
 import _ from 'lodash';
+
 import './index.css';
-// import icon from './favicon.png'
 import print from './print';
 import { cube } from './math'
 
 function component() {
 
-    const x = () => {
+    const x = async () => {
         console.log(1);
+        return 1;
     }
 
     var element = document.createElement('div');
