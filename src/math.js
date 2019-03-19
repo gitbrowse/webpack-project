@@ -1,6 +1,6 @@
 "use strict";
-// const PI: number = 3.14;
 Object.defineProperty(exports, "__esModule", { value: true });
+var PI = 3.14;
 function square(x) {
     return x * x;
 }

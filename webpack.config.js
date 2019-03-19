@@ -43,7 +43,7 @@ module.exports = {
             template: 'index.html',
             inject: true
         }),
-        new CleanWebpackPlugin(['dist']),
+        // new CleanWebpackPlugin(['dist']),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
     ],
